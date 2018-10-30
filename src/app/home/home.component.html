@@ -1,0 +1,13 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <app-header [uname]="uname" [upwd]="upwd" [isLoginsuccess]="isLogin"></app-header>
+  <app-index></app-index>
+  <div *ngIf="isShow">
+    <h4>Congratulations</h4>
+    <h4>you can eat {{list[index]}}</h4>
+  </div>
+  <button (click)="eatWhat()">今日推荐</button>
+  <p>Click on the Button above to see today's food recommendations </p>
+</div>

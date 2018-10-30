@@ -1,0 +1,8 @@
+#header>.nav .nav-link.active,
+#header>.nav .nav-link:hover{
+  background:none;
+  font-weight:bold;
+}
+.my-list{
+  text-decoration:none ;
+}

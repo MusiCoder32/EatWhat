@@ -1,0 +1,14 @@
+<div id="header"  style="margin-bottom: 20px">
+    <div id="signout" class="my-2 my-md-0 mr-md-3 small" *ngIf="!isLoginsuccess">
+      <a class="p-1 text-muted" >注册</a>
+      <b class="p-1 text-muted">|</b>
+      <a class="p-1 text-muted" id="btnLogin"(click)="signin()">登录</a>
+    </div>
+    <div id="signin" class="my-2 my-md-0 mr-md-3 small" *ngIf="isLoginsuccess" style="display: flex;justify-content: space-between">
+      <a class='my-list' href="#" title="我的收藏">
+        我的收藏<img src="../../assets/img/header/care.png">
+      </a>
+      <a class="my-list" href="#">Welcome <span id="uname">{{uname}}</span></a>
+      <a class="my-list" id="btnSignout" (click)="signout()">注销</a>
+    </div>
+</div>

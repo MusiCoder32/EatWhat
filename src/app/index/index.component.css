@@ -1,0 +1,45 @@
+@media screen and (max-width: 450px) {
+  .container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 450px) {
+  .container {
+    position: relative;
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+.container:before {
+  content: "";
+  display: block;
+  padding-top: 80%;
+  width: 100%;
+}
+
+.container img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /*opacity: 0;*/
+  transition: all 2s ease 0s;
+}
+
+/*.container img:nth-child(1) {*/
+  /*opacity: 1;*/
+/*}*/
+
+.preBtn, .nextBtn {
+
+}
+
+.showSlide {
+  opacity: 1;
+}
+
+.hideSlide {
+  opacity: 0;
+}
